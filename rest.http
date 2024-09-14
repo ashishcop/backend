@@ -1,0 +1,21 @@
+GET http://localhost:3000/products/
+
+### POST create a new product
+
+POST http://localhost:3000/products/
+
+### GET single product
+
+GET http://localhost:3000/products/1
+
+### Update single product
+
+
+PATCH  http://localhost:3000/products/1
+
+
+### DELETE single product
+DELETE  http://localhost:3000/products/1
+
+### 404
+GET  http://localhost:3000/
