@@ -1,8 +1,25 @@
 GET http://localhost:3000/products/
 
-### POST create a new product
+### POST create a new product type: application/json
 
-POST http://localhost:3000/products/
+POST http://localhost:3000/products
+Content-Type:  application/json
+
+{
+    "name":"iMac",
+    "price":49999
+}
+
+
+### POST create a new product content type : application/x-www-form-urlencoded
+
+POST http://localhost:3000/products
+Content-Type: application/x-www-form-urlencoded
+
+{
+    "name":"iMac",
+    "price":49999
+}
 
 ### GET single product
 
