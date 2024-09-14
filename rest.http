@@ -1,4 +1,4 @@
-GET http://localhost:3000/products/
+GET http://localhost:3000/products
 
 ### POST create a new product type: application/json
 

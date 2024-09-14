@@ -6,8 +6,13 @@ const router = express.Router();
 
 
 
-router.get('/',(req,res,next)=>{
-    res.send(`OK!!!!!!!!!!`);
+router.get('/',async (req,res,next)=>{
+    try {
+        const products = await Product.find({},{_id:0,name:1,price:1});
+        res.send(products)
+    } catch (error) {
+       console.log(error.message); 
+    }
     
 });
 
