@@ -14,10 +14,7 @@ router.get('/',(req,res,next)=>{
 
 router.post('/',(req,res,next)=>{
     const product = new Product({name: req.body.name, price:req.body.price});
-    product.save().then(result=>{console.log(result); res.send(result);}).catch(err=>console.log(err.message));
-    
-    console.log(req.body);
-    res.send(`product created`);
+    product.save().then(result=>{console.log(result);  res.send(result);}).catch(err=>console.log(err.message));
     
 });
 
