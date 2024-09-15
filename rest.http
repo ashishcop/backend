@@ -10,6 +10,9 @@ Content-Type:  application/json
     "price":49999
 }
 
+### DELETE single product
+DELETE  http://localhost:3000/products/66e69995b253a1ebf6f70a65
+
 
 ### POST create a new product content type : application/x-www-form-urlencoded
 
@@ -23,16 +26,18 @@ Content-Type: application/x-www-form-urlencoded
 
 ### GET single product
 
-GET http://localhost:3000/products/1
+GET http://localhost:3000/products/66e69ab2f11520f648b6a8c4     
 
 ### Update single product
 
 
-PATCH  http://localhost:3000/products/1
+PATCH  http://localhost:3000/products/66e69ab2f11520f648b6a8c4      
+Content-Type: application/json
 
+{
+    "name":"Updated4 Mac"
+}
 
-### DELETE single product
-DELETE  http://localhost:3000/products/1
 
 ### 404
 GET  http://localhost:3000/
